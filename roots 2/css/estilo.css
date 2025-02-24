@@ -1,0 +1,118 @@
+/* Desktop - Responsividade */
+
+:root{
+    --ash-gray: #aaa89eff;
+    --silver: #cacbc9ff;
+    --verdigris: #40aba5ff;
+    --gold-metallic: #d9b768ff;
+    --raisin-black: #252223ff;
+    --platinum: #d8d9d9ff;
+    --eerie-black: #181a1aff;
+    --timberwolf: #d4d4d4ff;
+    --platinum-2: #dadbdbff;
+    --coyote: #805f3fff;
+
+}
+
+@font-face {
+    font-family: king;
+    src: url('/imagem/KingsguardCalligraphy_PERSONAL_USE_ONLY.otf');
+}
+
+body{
+    background: radial-gradient(var(--silver), var(--eerie-black));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--eerie-black);
+}
+
+.central{
+    width: 50%;
+    background: var(--silver);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 15px var(--gold-metallic);
+  }
+  
+  hr{
+    width: 100%;
+    height: 20px;
+    background-color: var(--verdigris);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'king';
+    font-size: 55px;
+    font-weight: 100;
+    margin: 0; 
+ }
+
+ .insta{
+    width: 10%;
+    margin-left: 10px;
+ }
+
+ .zap{
+    width: 10%;
+ }
+
+ .numero{
+    font-size: 30px;
+    margin-left: 10px;
+ }
+
+ .instagram{
+    font-size: 20px;
+    margin-left: 10px;
+ }
+
+ .Redes{
+   display: flex;
+   padding: 2%;
+   align-items: center;
+   margin-left: 130px;
+
+ }
+
+ /* Tablet - Responsividade */
+
+ @media(max-width:1024px) and (min-width:720px){
+    body{
+        background: var(--coyote);
+    }
+
+    .central{
+        width: 50%;
+    }
+ }
+
+ /* Mobile-Responsividade */
+
+ @media(max-width:720px){
+  body{
+    background: var(--verdigris);
+  }
+
+  .central{
+    width: 70%;
+  }
+
+ }
